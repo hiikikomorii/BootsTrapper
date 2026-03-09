@@ -159,14 +159,12 @@ class Main:
         self.settings_btn = tk.Button(self.frame, text="Settings", activebackground="#0010A7", bg="blue", fg="white", command=self.settings, width=10)
         self.settings_btn.pack(side="left", padx=5, pady=5)
         
-
-
     def check_pip(self):
         try:
             import colorama
 
             log("[SUCCESS] All modules are installed")
-            hidlow_path = "main.py"
+            hidlow_path = "example.py"
             subprocess.Popen(
                 ["cmd", "/k", sys.executable, str(hidlow_path)],
                 cwd="../../",
@@ -299,5 +297,6 @@ if __name__ == '__main__':
     root = tk.Tk()
     app = Main(root)
     root.mainloop()
+
 
 
