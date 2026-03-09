@@ -163,7 +163,6 @@ class Main:
 
     def check_pip(self):
         try:
-            import zdzdzd
             import colorama
 
             log("[SUCCESS] All modules are installed")
@@ -300,4 +299,5 @@ if __name__ == '__main__':
     root = tk.Tk()
     app = Main(root)
     root.mainloop()
+
 
