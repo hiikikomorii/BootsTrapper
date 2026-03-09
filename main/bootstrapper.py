@@ -167,7 +167,6 @@ class Main:
             hidlow_path = "example.py"
             subprocess.Popen(
                 ["cmd", "/k", sys.executable, str(hidlow_path)],
-                cwd="../../",
                 creationflags=subprocess.CREATE_NEW_CONSOLE
             )
 
@@ -297,6 +296,7 @@ if __name__ == '__main__':
     root = tk.Tk()
     app = Main(root)
     root.mainloop()
+
 
 
 
